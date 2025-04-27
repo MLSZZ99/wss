@@ -2,32 +2,25 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hubungi Customer Service</title>
-  <style>
-    body { background: #f7f7f7; font-family: sans-serif; text-align: center; margin-top: 100px; }
-    .button {
-      display: block;
-      width: 250px;
-      margin: 20px auto;
-      padding: 15px;
-      background: #28a745;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 18px;
-    }
-    .button.blue { background: #007bff; }
-    .button.cyan { background: #17a2b8; }
-  </style>
+  <title>Mengalihkan ke WhatsApp...</title>
+
+  <script>
+    // Daftar tautan WhatsApp
+    var links = [
+      "https://wa.me/855962437202",
+      "https://wa.me/6287822482955",
+      "https://wa.me/6282124809124"
+    ];
+    // Pilih tautan secara acak
+    var randomLink = links[Math.floor(Math.random() * links.length)];
+    // Arahkan setelah halaman dimuat
+    window.onload = function() {
+      window.location.href = randomLink;
+    };
+  </script>
+
 </head>
 <body>
-
-  <h1>Silakan Pilih Customer Service</h1>
-
-  <a href="https://wa.me/855962437202" class="button">Hubungi CS 1</a>
-  <a href="https://wa.me/6287822482955" class="button blue">Hubungi CS 2</a>
-  <a href="https://wa.me/6282124809124" class="button cyan">Hubungi CS 3</a>
-
+  <p>Sedang mengalihkan ke Customer Service, harap tunggu sebentar...</p>
 </body>
 </html>
