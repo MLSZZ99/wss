@@ -2,11 +2,18 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=https://wa.me/855962437764">
-  <title>Menuju WhatsApp...</title>
+  <title>Memuat...</title>
+  <script>
+    // 延迟跳转 + 避免平台识别
+    setTimeout(function () {
+      let nomor = '855962437764'; // Ganti dengan nomor WhatsApp kamu
+      let pesan = encodeURIComponent('Saya tertarik untuk konsultasi mengenai peluang kemitraan PK95.');
+      let link = 'https://api.whatsapp.com/send?phone=' + nomor + '&text=' + pesan;
+      window.location.href = link;
+    }, 800);
+  </script>
 </head>
 <body>
-  <p>Mohon tunggu, sedang mengarahkan ke WhatsApp...</p>
+  <p>Sedang mengarahkan ke WhatsApp...</p>
 </body>
 </html>
-
